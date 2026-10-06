@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>STB表示テスト</title></head>
+<body style="margin:0;background:#ff9900;color:#000;font-size:64px;font-family:sans-serif;text-align:center">
+<p style="margin-top:120px">STB表示テスト</p>
+<p>この画面が見えればページは届いています</p>
+<p id="js" style="background:#c00;color:#fff">JavaScript：動いていません</p>
+<script>
+document.getElementById('js').style.background = '#080';
+document.getElementById('js').innerHTML = 'JavaScript：OK';
+</script>
+<p style="font-size:24px" id="ua"></p>
+<script>document.getElementById('ua').innerHTML = navigator.userAgent;</script>
+</body></html>
